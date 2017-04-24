@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    tools:context="com.example.rajat.safehighwayapp.Splash_screen"
+    android:orientation="vertical">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/logo"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+            <!-- This FrameLayout insets its children based on system windows using
+                 android:fitsSystemWindows. -->
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="Safe Highway App"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textIsSelectable="false"/>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#464646"
+                android:textAlignment="center"
+                android:paddingLeft="30dp"
+                android:text="DISCLAIMER: "
+                android:textSize="10dp"
+                android:textIsSelectable="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#464646"
+                android:paddingRight="30dp"
+                android:text="Safe Highway App doesn't claim responsibility for any loss to life or property. Use your best judgement."
+                android:textSize="10dp"
+                android:textIsSelectable="false"/>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+</FrameLayout>
